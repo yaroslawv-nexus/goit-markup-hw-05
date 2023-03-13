@@ -559,7 +559,7 @@ body {
   transition: box-shadow 250ms var(--cubic-function);
 }
 
-.projects-flex .projects-item:hover {
+.projects-flex .projects-item:is(:hover, :focus) {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -622,6 +622,6 @@ body {
   transition: transform 250ms var(--cubic-function);
 }
 
-.projects-flex .projects-item:hover .image-project-cont .text-card {
+.projects-flex .link:is(:hover, :focus) .text-card {
   transform: translateY(0);
 }
