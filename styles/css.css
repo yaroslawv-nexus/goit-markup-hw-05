@@ -409,12 +409,13 @@ body {
 }
 
 .social-team-flex .link-social {
-  display: inline-block;
+  display: flex;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: var(--primary-brand);
-  padding: 12px;
+  justify-content: center;
+  align-items: center;
   color: var(--alt-white);
   transition: background-color 250ms var(--cubic-function);
 }
